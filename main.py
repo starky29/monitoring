@@ -1,9 +1,9 @@
 import os, distro
 
-if distro.id() == ('ubuntu' or 'debian'):
-    os.system('sudo apt -y update && sudo apt -y install docker && sudo apt -y install docker-compose')
-else:
-    os.system('sudo dnf -y install docker && sudo dnf -y install docker-compose')
+#if distro.id() == ('ubuntu' or 'debian'):
+#    os.system('sudo apt -y update && sudo apt -y install docker && sudo apt -y install docker-compose')
+#else:
+#    os.system('sudo dnf -y install docker && sudo dnf -y install docker-compose')
 work_dir = '/opt/prometheus_stack'
 prom_st = ['prometheus', 'grafana', 'alertmanager', 'blackbox']
 if not os.path.isdir(work_dir):
